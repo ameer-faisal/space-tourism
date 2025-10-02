@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/Destination/destin.css">
+    <link rel="shortcut icon" href="/assets/favicon-32x32.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="/assets/shared/logo.svg" alt="Logo">
+            <hr>
+        </div>
+        <nav>
+            <img src="/assets/shared/icon-close.svg" alt="Close Icon" class="close-icon" hidden>
+            <ul>
+                <li><a href="/index.html" >00 Home</a></li>
+                <li><a href="/Destination.html" class="active">01 Destination</a></li>
+                <li><a href="/Crew.html">02 Crew</a></li>
+                <li><a href="/Technology.html">03 Technology</a></li>
+            </ul>
+        </nav>
+        <div class="menu-toggle" hidden>
+            <img src="/assets/shared/icon-hamburger.svg" alt="Menu Icon" >
+        </div>
+    </header>
+    <h2><span>01</span> Pick your destination</h2>
+    
+<div id="content">
+    <div class="left">
+        <img id="planet-image" alt="Planet Image">
+    </div>
+    <div class="right">
+        <div class="nav-dest">
+            <ul>
+                <li><button id="moon" class="active">Moon</button></li>
+                <li><button id="mars">Mars</button></li>
+                <li><button id="europa">Europa</button></li>
+                <li><button id="titan">Titan</button></li>
+            </ul>
+        </div>
+        <h1 id="planet-name"></h1>
+        <p id="planet-description"></p>
+        <hr>
+        <div class="info">
+            <div class="distance">
+                <h3>Avg. Distance</h3>
+                <p id="planet-distance"></p>
+            </div>
+            <div class="travel-time">
+                <h3>Est. Travel Time</h3>
+                <p id="planet-travel-time"></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+    <script src="/script.js"></script>
+    <script src="/Destination/destin.js"></script>
+</body>
+</html>
