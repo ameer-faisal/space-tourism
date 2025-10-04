@@ -15,7 +15,6 @@ fetch('/data.json')
             techImage.src = getImagePath(index);
             techName.textContent = techData[index].name;
             techDescription.textContent = techData[index].description;
-            // نخزن التقنية الحالية
             currentIndex = index;
         }
 
@@ -36,8 +35,8 @@ fetch('/data.json')
             });
         });
 
-        // 🔥 فقط Event Listener واحد للـ resize
         window.addEventListener('resize', () => {
             techImage.src = getImagePath(currentIndex);
         });
     });
+
